@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Digite um número: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			Dobro(n1);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static int Dobro (int n1)
+		{
+			int DobroNum = n1 * 2;
+			
+			Console.WriteLine("O dobro de "+ n1 + " é: " + DobroNum);
+			return DobroNum;
+		}
+	}
+}
