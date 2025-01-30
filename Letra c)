@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Digite um número: ");
+			float n1 = float.Parse(Console.ReadLine());
+			
+			Metade(n1);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static float Metade (float n1)
+		{
+			float MetadeNum = n1 / 2;
+			
+			Console.WriteLine("A metade de "+ n1 +" é: " +MetadeNum);
+			return MetadeNum;
+		}
+	}
+}
