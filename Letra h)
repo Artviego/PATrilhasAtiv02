@@ -1,0 +1,28 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("------Exibe o valor absoluto do número------");
+			
+			Console.Write("\nDigite um número: ");
+			float n1 = float.Parse(Console.ReadLine());
+			
+			ValorAbsoluto(n1);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static float ValorAbsoluto (float n1)
+		{
+			
+			Console.WriteLine("O valor absoluto de "+ n1 +" é: "+ Math.Abs(n1));
+			
+			return n1;
+		}
+	}
+}
