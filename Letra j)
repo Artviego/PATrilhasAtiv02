@@ -1,0 +1,30 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("------Exibe o resto da divisão do número dividido por 2------");
+			
+			Console.Write("Digite um número: ");
+			float n1 = float.Parse(Console.ReadLine());
+			
+	   //Exibe o retorno da função
+			RestoDaDivisao(n1);
+			
+			
+			Console.ReadKey();
+		}
+		
+//Função para realizar o cálculo e mostrar o resto da divisão
+		public static float RestoDaDivisao (float n1)
+		{
+			float RestoDiv = n1 % 2;
+			
+			Console.WriteLine("O resto da divisão de "+ n1 +" por 2 é: " +RestoDiv);
+			return RestoDiv;
+		}
+	}
+}
