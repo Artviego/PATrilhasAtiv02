@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Digite um número: ");
+			int n1 = Int32.Parse(Console.ReadLine());
+			
+			NumAoQuadrado(n1);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static int NumAoQuadrado (int n1)
+		{
+			int NumAoQuadrado = n1 * n1;
+			
+			Console.WriteLine(n1 +" elevado ao quadrado é: " +NumAoQuadrado);
+			return NumAoQuadrado;
+		}
+	}
+}
