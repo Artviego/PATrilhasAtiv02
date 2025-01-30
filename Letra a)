@@ -1,0 +1,29 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite um número: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			Console.WriteLine("Digite outro número: ");
+			int n2 = Convert.ToInt32(Console.ReadLine());
+			
+			Soma(n1, n2);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static int Soma (int n1, int n2)
+		{
+			int Somatoria = n1 + n2;
+			
+			Console.WriteLine("\nA soma dos dois números é: " + Somatoria);
+			return Somatoria;
+		}
+	}
+}
