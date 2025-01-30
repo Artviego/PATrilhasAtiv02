@@ -1,0 +1,31 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("------Divisão do primeiro número pelo segundo------");
+			
+			Console.Write("\nDigite o primeiro número: ");
+			float n1 = float.Parse(Console.ReadLine());
+			
+			Console.Write("Digite o seguno número: ");
+			float n2 = float.Parse(Console.ReadLine());
+			
+			Divisao(n1, n2);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static float Divisao (float n1, float n2)
+		{
+			float DivisaoNum1 = n1 / n2;
+			
+			Console.WriteLine(n1 +" dividido por "+ n2 +" é: "+ DivisaoNum1);
+			return DivisaoNum1;
+		}
+	}
+}
