@@ -1,0 +1,34 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("-----Multiplicação entre dois números-----");
+			
+			Console.WriteLine("\nDigite um número: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			Console.WriteLine("Digite outro número: ");
+			int n2 = Convert.ToInt32(Console.ReadLine());
+			
+			Multiplicacao(n1, n2);
+			
+			
+			Console.ReadKey();
+		}
+		
+		//Função para realizar o cálculo
+		public static int Multiplicacao(int n1, int n2)
+		{
+			int NumMultiplicacao = n1 * n2;
+			
+			Console.WriteLine("\nA multiplicação de "+ n1 +" por "+ n2 + " é: "+ NumMultiplicacao);
+			
+			
+			return NumMultiplicacao;
+		}
+	}
+}
