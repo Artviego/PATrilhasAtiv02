@@ -6,8 +6,6 @@ namespace Atividade_02
 	{
 		public static void Main(string[] args)
 		{
-			Console.Write("------Divisão do primeiro número pelo segundo------");
-			
 			Console.Write("\nDigite um número: ");
 			float n1 = float.Parse(Console.ReadLine());
 			
