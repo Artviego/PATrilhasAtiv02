@@ -1,0 +1,31 @@
+using System;
+
+namespace Atividade_02
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("-----Subtração do segundo número pelo primeiro-----");
+			
+			Console.WriteLine("\nDigite um número: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			Console.WriteLine("Digite outro número: ");
+			int n2 = Convert.ToInt32(Console.ReadLine());
+			
+			Subtracao(n1, n2);
+			
+			
+			Console.ReadKey();
+		}
+		
+		public static int Subtracao (int n1, int n2)
+		{
+			int SubtracaoNum = n2 - n1;
+			
+			Console.WriteLine("\nA Subtração de "+ n2 +" por "+ n1 + " é: "+ SubtracaoNum);
+			return SubtracaoNum;
+		}
+	}
+}
